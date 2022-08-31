@@ -1,0 +1,125 @@
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+h1{
+    padding: 25px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+
+#body{
+  font-family: Aboreto;
+  font-size: 20px;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?cs=srgb&dl=pexels-pixabay-53464.jpg&fm=jpg");
+
+  width: 60vh;
+  height: 80vh;
+
+}
+.container{
+    margin-top: 50px;
+    border-radius: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%,-50%);
+    width: 40vw;
+    background: linear-gradient(to right,rgb(17, 241, 241),rgb(245, 151, 36));
+    box-shadow: 2.5px 2px 2px 1px ;
+    
+}
+.control{
+    margin: 30px 0px;
+}
+input{
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 15px;
+    margin-top: 20px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+select{
+    padding: 5px;
+    margin: 20px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    align-items: center;
+    font-size: 17px;    
+}
+button#calculate{
+    
+    padding: 10px;
+    margin: 20px 15px;
+    border-radius: 18px;
+    background: none;
+    text-align: center;
+    align-items: center;   
+    font-size: 18px;
+    box-shadow: 1.5px 1px 1px 1px ;
+    transition-duration: 0.4s;
+    width: 95px;
+    transition: width 0.3s;
+
+}
+
+button#calculate:hover{
+    background: linear-gradient(to left ,rgb(245, 151, 36),rgb(17, 241, 241));
+    width: 90px;
+    
+}
+button#clear{
+    padding: 10px;
+    margin: 20px 15px;
+    border-radius: 18px;
+    background: none;
+    text-align: center;
+    align-items: center;   
+    font-size: 18px;
+    box-shadow: 1.5px 1px 1px 1px ;
+    transition-duration: 0.4s;
+    width: 95px;
+    transition: width 0.3s;
+}
+
+button#clear:hover{
+    background: linear-gradient(to left ,rgb(245, 151, 36),rgb(17, 241, 241));
+    width: 90px;
+}
+
+.totaltip{
+ padding: 10px;
+ margin: 20px 0px;
+ font-weight: bolder;
+}
+
+.tip{
+   margin-top: 15px;
+   border-bottom: 1px solid black; 
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="container"] {
+      width: 80%; 
+    }
+}
